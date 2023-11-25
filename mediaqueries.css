@@ -108,4 +108,7 @@
   .project-containers {
     flex-direction: column; /* Change to a column layout for smaller screens */
   }
+  .experience-containers {
+    flex-direction: column;
+  }
 }
