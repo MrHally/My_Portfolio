@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="vendor/aos/aos.css">
+</head>
+
+<body>
+  <nav id="desktop-nav" data-aos="fade-bottom" data-aos-duration="1000">
+    <div class="logo">Ngô Nhật Anh</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Giới Thiệu</a></li>
+        <li><a href="#experience">Kinh Nghiệm</a></li>
+        <li><a href="#projects">Dự Án</a></li>
+        <li><a href="#contact">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav" data-aos="fade-bottom">
+    <div class="logo">Ngô Nhật Anh</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Giới Thiệu</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Kinh Nghiệm</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Dự án</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Liên Hệ</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container" data-aos="fade-up">
+      <img src="./assets/profile-pic.jpg" style="border-radius: 5%;" alt="Ảnh cá nhân" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1" data-aos="fade-left" data-aos-duration="500">Xin chào, mình là</p>
+      <h1 class="title"  data-aos="fade-left" data-aos-duration="1000">Nhật Anh</h1>
+      <p class="section__text__p2" data-aos="fade-left" data-aos-duration="1200">là một Freshment Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/main-CV.pdf')" data-aos="zoom-in-up" data-aos-duration="1000">
+          My CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'" data-aos="zoom-in-up" data-aos-duration="1200">
+          Liên hệ
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/nh%E1%BA%ADt-anh-ng%C3%B4-825948220/'" data-aos="fade-up" data-aos-duration="900" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/MrHally'" data-aos="fade-up" data-aos-duration="1200" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1" data-aos="fade-bottom" data-aos-duration="2000">Giới Thiệu Bản Thân</p>
+    <h1 class="title" data-aos="fade-up" data-aos-duration="1800">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container" data-aos="zoom-in-right" data-aos-duration="800">
+        <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="about-card-container" data-aos="flip-left" data-aos-duration="1500" >
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h2>Mục tiêu</h2>
+            <p>Mong đóng góp cho cộng đồng <br /> và mở mang kiến thức</p>
+          </div>
+          <div class="about-card-container" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="200">
+            <img src="./assets/education-2.png" alt="Education icon" class="icon" />
+            <h2>Học Tập</h2>
+            <p>Chuyên ngành Hệ Thống Thông Tin<br />tại Cao Đẳng Cần Thơ</p>
+          </div>
+        </div>
+        <div class="text-container" data-aos="fade-left" data-aos-duration="1800" data-aos-delay="300">
+          <p style="font-size: 1.25rem;">
+            Sinh viên mới tốt nghiệp trường Cao Đẳng Cần Thơ,
+            Mong muốn tham gia công ty để xây dựng nền tảng và học hỏi, làm quen công việc trong môi trường chuyên
+            nghiệp,
+            Tìm hiểu thêm trong lĩnh vực công nghệ và đóng góp cộng đồng.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1" data-aos="fade-bottom" data-aos-duration="2000">Khám Phá</p>
+    <h1 class="title" data-aos="fade-up" data-aos-duration="1800">Kỹ Năng Của Mình</h1>
+    <div class="experience-details-container">
+      <div class="experience-containers">
+        <div class="details-container" data-aos="zoom-in-up" data-aos-duration="2000">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+
+            </article>
+          </div>
+        </div>
+        <div class="details-container" data-aos="zoom-in-up" data-aos-duration="2200" data-aos-delay="200">
+          <h2 class="experience-sub-title">Fundamentals/Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>My SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C#</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PHP</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1" data-aos="fade-bottom" data-aos-duration="2000">Gần đây</p>
+    <h1 class="title" data-aos="fade-up" data-aos-duration="1800">Dự Án & Báo Cáo</h1>
+    <div class="experience-details-container">
+      <div class="project-containers">
+        <div class="project-container color-container" data-aos="zoom-in-up" data-aos-duration="1500" width="380">
+          <div class="project-image-container">
+            <img src="./assets/project-1.png" style="width: 100%; height: 200px;" alt="Project 1" class="project-img"/>
+          </div>
+          <h2 class="experience-sub-title project-title">Java: Android Studio</h2>
+          <div style="margin: 0px 0px 15px 0px;">
+            <p>
+              Ứng dụng quản lý mặt hàng với chức năng CRUD và quét mã tìm kiếm mã hàng.
+            </p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MrHally/School_Project/tree/master/Android/QuanlyTapHoaVer1'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="project-container color-container" data-aos="zoom-in-up" data-aos-duration="1800" data-aos-delay="100">
+          <div class="project-image-container">
+            <img src="./assets/project-2.png" style="width: 100%; height: 200px;" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Angular & TypeScript</h2>
+          <div style="margin: 0px 5px 15px 0px;">
+            <p>
+              Website chuyển đổi tiền tệ bằng TS dùng object và pipe để định dạng số lượng chuyển đổi.
+            </p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MrHally/School_Project/tree/master/Framework/Angular/ChuyenDoiTienTe'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="project-container color-container" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="200">
+          <div class="project-image-container">
+            <img src="./assets/project-3.png" style="width: 100%; height: 200px;" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">.NET C#: Winforms</h2>
+          <div style="margin: 0px 5px 15px 0px;">
+            <p>
+              Chương trình quản lý mặt hàng theo mô hình quán thức ăn nhanh như Lotteria, chức năng CRUD và xuất hóa đơn bằng reporter.
+            </p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MrHally/School_Project/tree/master/C%23/BaoCaoLTCSDL'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1" data-aos="fade-bottom-right" data-aos-duration="1500">Muốn Hợp Tác</p>
+    <h1 class="title" data-aos="fade-right" data-aos-duration="1800">Hãy Liên Hệ Mình</h1>
+    <div class="contact-info-upper-container" data-aos="zoom-in-up" data-aos-duration="500">
+      <div class="contact-info-container" data-aos="fade-right" data-aos-duration="2000">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:nhatanh.personal@gmail.com">nhatanh.personal@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container" data-aos="fade-right" data-aos-duration="2500">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/nh%E1%BA%ADt-anh-ng%C3%B4-825948220/">My LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container" data-aos="fade-up">
+        <ul class="nav-links">
+          <li><a href="#about">Giới Thiệu</a></li>
+          <li><a href="#experience">Kinh Nghiệm</a></li>
+          <li><a href="#projects">Dự Án</a></li>
+          <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <p>Portfolio 2023 Nhật Anh.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
